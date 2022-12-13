@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="To be accessible, UI components need to work across multiple devices with varying screen-sizes and different kinds of input.
+    Moreover, components should be usable by the broadest group of users, including those with disabilities.">
+    <meta name="keywords" content="accessibility, article, UI, Component, visual issues, hearing issues, mobility issues, ">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Imporatation de font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Importation de font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512
+    MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accessible UI Component For The Web</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="nav_left_part">
+                <img src="img/logo.png" alt="logo" class="logo">
+
+                <section class="icons">
+                    <i class="fa-brands fa-twitter light_blue "></i>
+                    <i class="fa-brands fa-square-facebook dark_blue"></i>
+                </section>
+
+                <!-- Burger menu -->
+                <i class="fa-solid fa-bars burger_menu"></i>
+                <input type="checkbox" id="checkbox_btn">
+
+                <ul id="nav_links">
+                    <li><a class="link" href="#">Home</a></li>
+                    <li><a class="link" href="#">Article</a></li>
+                    <li><a class="link" href="#">Pricing</a></li>
+                    <li><a class="link" href="#">Contact</a></li>
+
+                    <section class="burger_icons">
+                        <i class="fa-brands fa-twitter light_blue white"></i>
+                        <i class="fa-brands fa-square-facebook  dark_blue white"></i>
+                    </section>
+                </ul>
+            </section>
+
+            <section class="nav_right_part">
+                <input type="text" placeholder="Rechercher.." class="nav_search_bar">
+                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="addy_osmani">
+            <img src="img/addyosmani.png" alt="addy osmani profile picture" class="addy_pdp">
+
+            <article class="content">
+                <h3>Addy Osmani</h3>
+                <p>Staff Engineer at Google. Working with the Chrome team • Creator of TodoMVC, Yeoman, Material Design Lite, Web Starter Kit • Passionate about web tooling
+                </p>
+            </article>
+        </section>
+
+        <section class="top_accessible_article">
+            <h1>Accessible UI component for the web</h1>
+            <p>"The power of the Web is in its universality. Access by everyone regardless of disability is an essantial axpect." - Tim Berners-Lee</p>
+        </section>
+
+        <picture>
+            <img src="img/banner.png" alt="banner image" class="banner">
+        </picture>
+
+        <section class="accessible_article">
+            <p class="top_carrousel_paragraph">To be <strong>accessible</strong>, UI
+                components need to work across
+                multiple devices with varying screen-sizes and different kinds of input. Moreover, components should be
+                usable by the broadest group of users, including those with disabilities.
+            </p>
+
+            <section class="article_content">
+                <section class="carousel">
+                    <i class="fa-solid fa-arrow-left-long white left_arrow" id="left_arrow"></i>
+
+                    <section class="carousel_body">
+                        <section class="item">
+                            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video" id="iframe"></iframe>
+                        </section>
+                        <i class="fa-solid fa-arrow-right white right_arrow" id="right_arrow"></i>
+                    </section>
+
+                    <p id="frame_title"></p>
+                </section>
+
+
+                <article class="article_bottom_content">
+                    <p class="bold_paragraph">When designing for accessibility, there are four key
+                        areas of disability to consider: visual, <br>
+                        hearing, mobility and cognition.
+                    </p>
+
+                    <p class="first_p"><strong>Visual issues</strong> can range from an inability to distinguish colors to no vision at all.</p>
+
+                    <ul>
+                        <li> Ensure a minimum <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast" class="link">contrast ratio threshold</a> is met for
+                            text content.
+                        </li>
+                        <li> Avoid communicating information <a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-without-color"
+                            class="link">using solely color</a> and ensure that all text is <a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio
+                            contrast-scale" class="link">resizable</a>.
+                        </li>
+                        <li>Ensure all user interface components can be used
+                            with assistive technologies such as screen
+                            readers, magnifiers and braille displays. This entails ensuring that UI components are marked
+                            up such that accessibility APIs can programmatically determine
+                            the role, state, value and title of any element.
+                        </li>
+                    </ul>
+
+                    <p><strong>Hearing issues</strong> mean a user may have issues hearing sound emitted from a page.</p>
+
+                    <ul class="fade_out">
+                        <li> Make the content understandable using <a href="https://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt" class="link">text alternatives</a> for
+                            all content that is not strictly
+                            text.
+                        </li>
+                        <li> Ensure you test that your UI components are still functional <a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure
+                            separation-understanding" class="link">without sound</a>.
+                        </li>
+                    </ul>
+
+                    <span id="more">
+                        <p><strong>Mobility issues</strong> can include the inability to operate a mouse, a keyboard or touch-screen.</p>
+                        <ul class="left">
+                            <li> Make the content of your UI components <a href="https://www.w3.org/WAI/ARIA/apg/#keyboard" class="link">
+                                functionally accessible from a keyboard</a> for any actions one would otherwise use a mouse for.
+                            </li>
+                            <li> Ensure UI components are correctly marked up for assistive technologies; these users may use technologies such
+                                as voice control software and physical switch controls, which tend to use the same APIs as other assistive
+                                technologies like screen readers.
+                            </li>
+                        </ul>
+
+                        <p>Cognitive issues mean a user may require assistive
+                            technologies to help them with reading text, so it’s
+                            important to ensure text alternatives exist.
+                        </p>
+                        <ul class="left">
+                            <li>Avoid a visual presentation that is <a href="https://www.w3.org/TR/WCAG20/#time-limits" class="link">repetitive </a>or flashing as this
+                                can cause some users <a href="https://www.w3.org/TR/WCAG20/#seizure" class="link">issues</a>.
+                            </li>
+                            <li> Avoid interactions that are timing-based.
+                            </li>
+                        </ul>
+                        <p>This may seem like a lot of bases to cover, but we’ll walk through the process for assessing and then
+                            improving the accessibility of your UI component.
+                        </p>
+                    </span>
+                </article>
+                
+                <button id="read_more_btn">Read more for $2,00/month</button>
+                <button id="read_less_btn">Read less</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <h2>More recommandations</h2>
+        <section class="articles">
+            <article class="article_card">
+                <img src="img/article1.png" alt="article 1 image">
+                <section class="body_card">
+                    <p>More from Addy Osmani</p>
+                    <h3>Offline Storage for Progressive Web Apps</h3>
+                    <section class="bottom_card">
+                        <img src="img/addyosmani-small.png" alt="addy osmani small profile picture">
+                        <section class="user_reading_info">
+                            <h4>Addy Osmani</h4>
+                            <p>6 minutes read</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+
+            <article class="article_card">
+                <img src="img/article2.png" alt="article 2 image">
+                <section class="body_card">
+                    <p>Also tagged Accessibility</p>
+                    <h3>Color my world : The science of color in UX</h3>
+                    <section class="bottom_card">
+                        <img src="img/carolynherman-small.png" alt="carolyn herman small profile picture">
+                        <section class="user_reading_info">
+                            <h4>Carolyn Herman</h4>
+                            <p>3 minutes read</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+
+            <article class="article_card">
+                <img src="img/article3.png" alt="article 3 image">
+                <section class="body_card">
+                    <p>Also tagged Accessibility</p>
+                    <h3>Implementing Accessibility for a custom control in</h3>
+                    <section class="bottom_card">
+                        <img src="img/coreyfloyd-small.png" alt="corey floyd small profile picture">
+                        <section class="user_reading_info">
+                            <h4>Corey Floyd</h4>
+                            <p>6 minutes read</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
